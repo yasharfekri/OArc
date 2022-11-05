@@ -25,6 +25,7 @@ namespace OA.Controllers
             var origin = Request.Headers["origin"];
             return Ok(await _accountService.RegisterAsync(request, origin));
         }
+        
         [HttpGet("confirm-email")]
         public async Task<IActionResult> ConfirmEmailAsync([FromQuery] string userId, [FromQuery] string code)
         {
