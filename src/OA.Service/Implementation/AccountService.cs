@@ -17,6 +17,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using FeatureManagement = OA.Domain.Enum.FeatureManagement;
 
 namespace OA.Service.Implementation
 {

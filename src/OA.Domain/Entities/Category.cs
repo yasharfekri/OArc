@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace OA.Domain.Entities
 {
@@ -6,6 +7,7 @@ namespace OA.Domain.Entities
     {
         public string CategoryName { get; set; }
         public string Description { get; set; }
+        public DateTime CreationDate { get; set; }
         public List<Product> Products { get; set; }
     }
 }
